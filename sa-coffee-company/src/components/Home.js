@@ -1,15 +1,15 @@
 import React from 'react'
-import { useState } from 'react';
+import { useState } from 'react'; 
 
 const Home = () => {
     const backgroundImg =[
-        {id:0, value:"assets/images/home-img-primary.jpg"}
+        {id:0, value:"../assets/images/home-img-primary.jpg"}
     ]
     const imgs=[
-        {id:0,value:"sa-coffee-company/src/assets/images/home-img-secondary.png"},
-        {id:1,value:"sa-coffee-company/src/assets/images/home-img-secondary.png"},
-        {id:2,value:"sa-coffee-company/src/assets/images/home-img-secondary.png"},
-        {id:3,value:"sa-coffee-company/src/assets/images/home-img-secondary.png"}
+        {id:0,value:"../assets/images/home-img-secondary.png"},
+        {id:1,value:"../assets/images/home-img-secondary.png"},
+        {id:2,value:"../assets/images/home-img-secondary.png"},
+        {id:3,value:"../assets/images/home-img-secondary.png"}
     ];
     const [sliderData,setSliderData] = useState(backgroundImg[0])
     const handleClick=(index)=>{

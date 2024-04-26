@@ -193,13 +193,13 @@ section{
 /* -------------------------------------NAVBAR CSS END----------------------------- */
 
 /* --------------------------------Home START-------------------------------- */
-.home{
+/* .home{
   min-height: 100vh;
   padding-top: 12rem;
   background: url("") no-repeat;
   background-position: center;
   background-size: cover;
-}
+} */
 
 .home .row{
   display: flex;
