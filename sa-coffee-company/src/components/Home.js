@@ -1,7 +1,5 @@
 import React from "react";
 import { useState } from "react";
-import image1 from "../assets/images/coffee-beans.png";
-import image2 from "../assets/images/coffee-beans2.png";
 import homeImage from "../assets/images/home-img-primary.jpg";
 import homeImageSecondary from "../assets/images/home-img-secondary.png";
 
@@ -35,14 +33,14 @@ const Home = () => {
 
   return (
     <div className="aka">
-      <section className="home" id="home">
+      <section className="home" id="Home">
         <div className="row">
           <div className="content">
             <h3>WILL PUT TEXT HERE</h3>
-            <a href="#OurStory" className="btn">
+            {/* <a href="" className="btn">
               {" "}
               Our Story
-            </a>
+            </a> */}
           </div>
           <div className="image">
             <img src={sliderData.value} alt="" className="main-home-image" />

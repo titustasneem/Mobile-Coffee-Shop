@@ -3,12 +3,12 @@ import { useState } from 'react'
 import storyText from "./storyText.js"
 
 
-const OurStory = () => {
+const Story = () => {
   const [data, setData] = useState(storyText);
 
   return (
     <div className='aka' >
-        <section className="story" id="OurStory">
+        <section className="story" id="Story">
             <h1 className="heading">Our Story</h1>
 
             <div className="box-container">
@@ -34,4 +34,4 @@ const OurStory = () => {
   )
 }
 
-export default OurStory
+export default Story

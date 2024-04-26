@@ -3,7 +3,7 @@ import React from 'react'
 const Book = () => {
   return (
     <div className='aka'>
-        <section className='book' id='book'>
+        <section className='book' id='Booking Section'>
             <h1 className='heading'>Booking </h1>
             <h3 className="title">Book an event </h3>
             <form action="">

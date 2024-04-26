@@ -25,22 +25,6 @@ const Navbar = ({ setState }) => {
         }
       >
         <ul>
-          {/* <li>
-            <a href="#" onClick={() => setState("Home")}>
-              Home
-            </a>
-          </li>
-          <li>
-            <a href="#" onClick={() => setState("OurStory")}>
-              Our Story
-            </a>
-          </li>
-          <li>
-            <a href="#">Booking</a>
-          </li>
-          <li>
-            <a href="#">Contact</a>
-          </li> */}
           {NavbBarSections.map((section) => {
             return (
               <li>
@@ -52,9 +36,9 @@ const Navbar = ({ setState }) => {
           })}
         </ul>
       </div>
-      <a href="#" className="btn">
+      {/* <a href="#" className="btn">
         Book an event
-      </a>
+      </a> */}
     </nav>
   );
 };

@@ -1,13 +1,13 @@
 import React from 'react'
-
+import img1 from "../assets/images/mobileVan.webp"
 const About = () => {
   return (
     <div className='aka' >
-        <section className="about" id="about">
+        <section className="about" id="About Section">
             <h1 className="heading">about us</h1>
             <div className="row">
                 <div className="image">
-                    <img src={"https://www.shutterstock.com/image-vector/street-food-truck-icon-template-600nw-1603428877.jpg"} alt="" />
+                    <img src={img1} alt="" />
                 </div>
                 <div className="content">
                   <h3 className="title">Why Choose Us </h3>
