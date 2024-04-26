@@ -293,7 +293,7 @@ section{
   position: relative;
 }
 
-.heading span{
+/* .heading span{
   position: absolute;
   top: 50%;
   left: 50%;
@@ -301,7 +301,7 @@ section{
   width: 100%;
   color: var(--main-color);
   font-size: 3rem;
-}
+} */
 
 .about .row .content{
   flex: 1 1 42rem;
@@ -332,7 +332,9 @@ section{
   padding: 1.5rem;
   text-align: center;
   border: var(--border);
-  border-radius: 85% 15% 94% 6% / 25% 79% 21% 75% ;
+  /* border-radius: 85% 15% 94% 6% / 25% 79% 21% 75% ; */
+  border-radius:50% 50% 50% 50% / 37% 73% 27% 63%    ;
+  
 }
 
 .about .row .content .icons-container .icons img{
@@ -346,3 +348,53 @@ section{
 }
 
 /* --------------------------------ABOUT END-------------------------------- */
+
+
+
+/* --------------------------------BOOK START-------------------------------- */
+/* .book{
+  background: url(./assets/images/book-bg.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+} */
+
+.book form{
+  margin: 0 auto 2rem auto;
+  max-width: 60rem;
+  border-radius: 10%  ;
+  padding: 3rem;
+  border: var(--border);
+}
+
+.book form .box{
+  width: 100%;
+  padding: 1rem 1.2rem;
+  border-radius: .5rem;
+  font-size: 1.6rem;
+  background: none;
+  text-decoration: none;
+  color: var(--main-color);
+  border: var(--border);
+  margin: .7rem 0;
+}
+
+.book form .box:focus{
+  border: var(--border-hover);
+}
+
+.book form textarea{
+  height: 15rem;
+  resize: none;
+}
+
+.book .title {
+  font-size: 3rem;
+  padding-top: 1rem;
+  color: var(--main-color);
+  letter-spacing: .2rem;
+  text-align: center;
+  position: relative;
+
+}
+/* --------------------------------BOOK END-------------------------------- */
+
