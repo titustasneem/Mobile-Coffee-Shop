@@ -3,13 +3,13 @@ import { useState } from 'react';
 
 const Home = () => {
     const backgroundImg =[
-        {id:0, value:"https://media.istockphoto.com/id/1066261750/vector/two-coffee-cups-drawing.jpg?s=612x612&w=0&k=20&c=rHat_PUTvVExUwQ0BLs4JxpTNlQlD0_8CyQp_L09MBY="}
+        {id:0, value:"assets/images/home-img-primary.jpg"}
     ]
     const imgs=[
-        {id:0,value:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSyzdzw58h-sp_sd4qa9RkLxNm1BMMOmEaFuurYi7CG7OGeJkL_G39cPZ037dRa5gDxRs&usqp=CAU"},
-        {id:1,value:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSyzdzw58h-sp_sd4qa9RkLxNm1BMMOmEaFuurYi7CG7OGeJkL_G39cPZ037dRa5gDxRs&usqp=CAU"},
-        {id:2,value:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSyzdzw58h-sp_sd4qa9RkLxNm1BMMOmEaFuurYi7CG7OGeJkL_G39cPZ037dRa5gDxRs&usqp=CAU"},
-        {id:3,value:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSyzdzw58h-sp_sd4qa9RkLxNm1BMMOmEaFuurYi7CG7OGeJkL_G39cPZ037dRa5gDxRs&usqp=CAU"}
+        {id:0,value:"sa-coffee-company/src/assets/images/home-img-secondary.png"},
+        {id:1,value:"sa-coffee-company/src/assets/images/home-img-secondary.png"},
+        {id:2,value:"sa-coffee-company/src/assets/images/home-img-secondary.png"},
+        {id:3,value:"sa-coffee-company/src/assets/images/home-img-secondary.png"}
     ];
     const [sliderData,setSliderData] = useState(backgroundImg[0])
     const handleClick=(index)=>{
