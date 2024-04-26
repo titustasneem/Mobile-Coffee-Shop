@@ -358,6 +358,15 @@ section{
   background-size: cover;
 } */
 
+.book .title {
+  font-size: 3rem;
+  padding-top: 1rem;
+  color: var(--main-color);
+  letter-spacing: .2rem;
+  text-align: center;
+  position: relative;
+
+} 
 .book form{
   margin: 0 auto 2rem auto;
   max-width: 60rem;
@@ -370,7 +379,7 @@ section{
   width: 100%;
   padding: 1rem 1.2rem;
   border-radius: .5rem;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   background: none;
   text-decoration: none;
   color: var(--main-color);
@@ -378,23 +387,74 @@ section{
   margin: .7rem 0;
 }
 
+.book form #sameLine{
+  width: 50%;
+  
+}
+
 .book form .box:focus{
   border: var(--border-hover);
 }
 
 .book form textarea{
-  height: 15rem;
+  height: 10rem;
   resize: none;
 }
 
-.book .title {
-  font-size: 3rem;
-  padding-top: 1rem;
-  color: var(--main-color);
-  letter-spacing: .2rem;
-  text-align: center;
-  position: relative;
 
-}
 /* --------------------------------BOOK END-------------------------------- */
+
+/* --------------------------------STORY START-------------------------------- */
+/* .story{
+  background: url('./assets/image/menu-bg.jpg') no-repeat;
+  background-position: center;
+  background-size: cover;
+} */
+
+.story .box-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.story .box-container .box{
+  flex: 1 1 42rem;
+  padding: 2rem;
+  border: var(--border);
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-left: 6rem;
+}
+
+.story .box-container .box:hover{
+  border-radius: 60% 22% 80% 20% / 20% 78% 20% 70% ;
+}
+
+.story .box-container .box img{
+  height: 8rem;
+  margin-left: -6rem;
+}
+
+.story .box-container .box .content h3{
+  font-size: 2.2rem;
+  color: var(--main-color);
+  line-height: 1.8;
+}
+
+.story .box-container .box .content p{
+  font-size: 1.6rem;
+  color: var(--main-color);
+  line-height: 1.8;
+  padding: 1rem 0;
+}
+
+.story .box-container .box .content span{
+  font-size: 2rem;
+  color: var(--main-color);
+  line-height: 1.8;
+}
+/* --------------------------------STORY END-------------------------------- */
+
 
