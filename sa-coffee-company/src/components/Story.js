@@ -8,7 +8,7 @@ const OurStory = () => {
 
   return (
     <div className='aka' >
-        <section className="story" id="story">
+        <section className="story" id="OurStory">
             <h1 className="heading">Our Story</h1>
 
             <div className="box-container">
