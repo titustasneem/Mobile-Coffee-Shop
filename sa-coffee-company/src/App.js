@@ -1,6 +1,6 @@
 
 import './App.css'
-// import About from './components/About'
+import About from './components/About'
 // import Book from './components/Book'
 // import Contact from './components/Contact'
 // import Footer from './components/Footer'
@@ -13,7 +13,7 @@ function App() {
     <div className="App">
       <Navbar/>
       <Home/>
-      {/* <About/> */}
+      <About/>
       {/* <Book/> */}
       {/* <Contact/> */}
       {/* <Footer/> */}
