@@ -10,7 +10,7 @@ const About = () => {
                     <img src={"../assets/images/home-img-secondary.png"} alt="" />
                 </div>
                 <div className="content">
-                  <h3 className="title">Why Choose Us</h3>
+                  <h3 className="title">Why Choose Us </h3>
                   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id perferendis dolores, atque tenetur laboriosam error!</p>
                   <a href="#" className='btn' >Read more</a>
                   <div className="icons-container">

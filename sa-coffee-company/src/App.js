@@ -1,11 +1,12 @@
 
 import './App.css'
+import Navbar from './components/Navbar'
+import Home from './components/Home'
 import About from './components/About'
-// import Book from './components/Book'
+import Book from './components/Book'
 // import Contact from './components/Contact'
 // import Footer from './components/Footer'
-import Home from './components/Home'
-import Navbar from './components/Navbar'
+
 
 function App() {
 
@@ -14,7 +15,7 @@ function App() {
       <Navbar/>
       <Home/>
       <About/>
-      {/* <Book/> */}
+      <Book/>
       {/* <Contact/> */}
       {/* <Footer/> */}
     </div>
