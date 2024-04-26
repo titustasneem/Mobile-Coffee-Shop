@@ -4,7 +4,7 @@ import './App.css'
 // import Book from './components/Book'
 // import Contact from './components/Contact'
 // import Footer from './components/Footer'
-// import Home from './components/Home'
+import Home from './components/Home'
 import Navbar from './components/Navbar'
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="App">
       <Navbar/>
-      {/* <Home/> */}
+      <Home/>
       {/* <About/> */}
       {/* <Book/> */}
       {/* <Contact/> */}
