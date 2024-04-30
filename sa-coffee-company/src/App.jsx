@@ -51,6 +51,7 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import About from "./components/About";
+import Product from "./components/Product";
 import Book from "./components/Book";
 import Footer from "./components/Footer";
 
@@ -67,6 +68,8 @@ function App() {
         return <Book/>;
         case "Our Story":
           return <Story/>;
+          case "Products":
+          return <Product/>;
      
       default:
         return (
