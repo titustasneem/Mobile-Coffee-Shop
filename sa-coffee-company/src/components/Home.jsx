@@ -24,7 +24,6 @@ const Home = () => {
         <div className="row">
           <div className="content">
             <h3>SA COFFEE COMPANY</h3>
-      
           </div>
           <div className="image">
             <img src={sliderData.value} alt="" className="main-home-image" />

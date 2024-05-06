@@ -45,14 +45,12 @@
 
 // export default App;
 
-
-
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import About from "./components/About";
-import Contact from "./components/Contact"
-import Landlord from "./components/Landlord"
+import Contact from "./components/Contact";
+import Landlord from "./components/Landlord";
 
 import Product from "./components/Product";
 import Book from "./components/Book";
@@ -63,25 +61,25 @@ import { useState } from "react";
 
 function App() {
   const [state, setState] = useState("");
-  const changeNavbarSection= () => {
+  const changeNavbarSection = () => {
     switch (state) {
-        case "About":
-          return <About/>;
+      case "About":
+        return <About />;
       case "Booking":
-        return <Book/>;
-        case "Our Story":
-          return <Story/>;
-          // case "Products":
-          // return <Product/>;
-     
+        return <Book />;
+      case "Our Story":
+        return <Story />;
+      // case "Products":
+      // return <Product/>;
+
       default:
         return (
           <>
-            <Home/>
-            <About/>
-            <Contact/>
-            <Landlord/>
-            <Product/>;
+            <Home />
+            <About />
+            <Contact />
+            <Landlord />
+            <Product />;
             <Footer />
           </>
         );
@@ -89,8 +87,7 @@ function App() {
   };
   return (
     <div className="App">
-    <Navbar setState={setState}/> {changeNavbarSection()}
-    
+      <Navbar setState={setState} /> {changeNavbarSection()}
     </div>
   );
 }
