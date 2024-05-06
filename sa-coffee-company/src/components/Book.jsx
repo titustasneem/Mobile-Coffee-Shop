@@ -4,8 +4,7 @@ const Book = () => {
   return (
     <div className='aka'>
         <section className='book' id='Booking Section'>
-            <h1 className='heading'>Booking </h1>
-            <h3 className="title">Book an event </h3>
+            <h1 className='heading'>Book an event</h1>
             <form action="">
               <input type="text" placeholder='Your name' id="sameLine"  className='box' />
               <input type="text" placeholder='Your surname name' id="sameLine" className='box' />

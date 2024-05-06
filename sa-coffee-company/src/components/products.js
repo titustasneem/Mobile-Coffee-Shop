@@ -4,34 +4,34 @@ import img3 from "../assets/images/Coffee_cup_icon.svg.png"
 import img4 from "../assets/images/Coffee_cup_icon.svg.png"
 
 
-// const products = [
+const productData = [
 
-//     {
-//         id:1,
-//         titles:"Single-Origin Coffees",
-//         descs:"Experience the unique flavors of the world coffee with our carefully selected single-origin beans. ",
-//         images:img1
-//     },
-//     {
-//         id:2,
-//         titles:"Blends",
-//         descs:"Explore our expertly crafted blends, perfect for every taste preference. ",
-//         images:img2
-//     },
-//     {
-//         id:3,
-//         titles:"Decaf Options",
-//         descs:"Enjoy the rich taste of coffee without the caffeine with our decaf options. ",
-//         images:img3
-//     },
-//     {
-//         id:4,
-//         titles:"Accessories",
-//         descs:" Elevate your coffee experience with our range of brewing accessories, including grinders, filters, and more. ",
-//         images:img4
-//     }
+    {
+        id:1,
+        titles:"Single-Origin Coffees",
+        descs:"Experience the unique flavors of the world coffee with our carefully selected single-origin beans. ",
+        images:img1
+    },
+    {
+        id:2,
+        titles:"Blends",
+        descs:"Explore our expertly crafted blends, perfect for every taste preference. ",
+        images:img2
+    },
+    {
+        id:3,
+        titles:"Decaf Options",
+        descs:"Enjoy the rich taste of coffee without the caffeine with our decaf options. ",
+        images:img3
+    },
+    {
+        id:4,
+        titles:"Accessories",
+        descs:" Elevate your coffee experience with our range of brewing accessories, including grinders, filters, and more. ",
+        images:img4
+    }
 
-// ]
+]
 
 
 const mobileOptions = [
@@ -87,4 +87,4 @@ const mobileOptions = [
 
 ]
 
-export default mobileOptions
+export  { mobileOptions, productData }

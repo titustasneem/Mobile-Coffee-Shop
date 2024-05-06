@@ -36,9 +36,6 @@ const Navbar = ({ setState }) => {
           })}
         </ul>
       </div>
-      {/* <a href="#" className="btn">
-        Book an event
-      </a> */}
     </nav>
   );
 };

@@ -116,6 +116,8 @@ section{
 
 .navigation-menu li a:hover{
   color: var(--hover-color);
+  text-decoration: underline;
+  text-decoration-color: var(--hover-color);
 }
 
 .hamburger {
@@ -181,10 +183,7 @@ section{
   }
   .navigation-menu li:hover {
     background-color: #eee;
-  }
-  .navigation .btn{
-    margin-top: 0;
-    margin-right: 5rem;
+    
   }
 }
 
@@ -198,11 +197,7 @@ section{
   .navigation-menu.expanded ul {
     display: block;
   }
-  .navigation .btn{
-    margin-top: 0;
-    margin-left: 5rem;
-  }
-  
+ 
 }
 
 /* -------------------------------------NAVBAR CSS END----------------------------- */
@@ -249,8 +244,6 @@ section{
 }
 
 .home .row .content h3{
-  /* text-align: right; */
-  /* margin-top: 4rem; */
   font-size: 6.5rem;
   color: var(--main-color);
   text-transform: uppercase;
@@ -276,11 +269,11 @@ section{
 
 
 /* --------------------------------ABOUT START-------------------------------- */
-.about {
+/* .about {
     background-image: url("https://images.pexels.com/photos/2196722/pexels-photo-2196722.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
     background-position: center;
     background-size: cover;
-}
+} */
 
 .about .row {
   display: flex;
@@ -312,26 +305,23 @@ section{
 
 .about .row .content{
   flex: 1 1 42rem;
-  /* background: #ffffff; */
 }
 
 .about .row .content .title{
-  color: var(--tertiary-color);
-  /* color: #4D4C43; */
+  color: var(--main-color);
   font-size: 3rem;
   line-height: 1.8;
 }
 
 .about .row .content p{
-  color: var(--tertiary-color);
-  /* color: #4D4C43; */
+  color: var(--main-color);
   font-size: 1.5rem;
   line-height: 1.8;
   padding: 1rem 0;
 }
 
 .about .heading {
-  color: var(--tertiary-color)
+  color: var(--main-color)
 }
 /* --------------------------------ABOUT END-------------------------------- */
 
@@ -502,6 +492,21 @@ section{
   color: var(--main-color);
   line-height: 1.8;
 }
+
+
+.product h3{
+  padding: 1rem 0;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: var(--main-color);
+  letter-spacing: .2rem;
+  text-align: center;
+  position: relative;
+  margin-top : 45px;
+}
+
+
+
 /* --------------------------------PRODUCT END-------------------------------- */
 
 
@@ -587,15 +592,10 @@ section{
   background-size: cover;
 } */
 
-.book .title {
-  font-size: 3rem;
-  padding-top: 1rem;
-  color: var(--main-color);
-  letter-spacing: .2rem;
-  text-align: center;
-  position: relative;
+.book .heading {
+  line-height: 2.8;
+}
 
-} 
 .book form{
   margin: 0 auto 2rem auto;
   max-width: 60rem;
@@ -618,7 +618,6 @@ section{
 
 .book form #sameLine{
   width: 50%;
-  
 }
 
 .book form .box:focus{
@@ -666,10 +665,9 @@ section{
   margin-left: -6rem;
 }
 
-.story .box-container .box .content h3{
-  font-size: 2.2rem;
-  color: var(--main-color);
-  line-height: 1.8;
+.story .heading{
+  line-height: 2.8;
+  
 }
 
 .story .box-container .box .content p{
@@ -679,11 +677,6 @@ section{
   padding: 1rem 0;
 }
 
-.story .box-container .box .content span{
-  font-size: 2rem;
-  color: var(--main-color);
-  line-height: 1.8;
-}
 /* --------------------------------STORY END-------------------------------- */
 
 
