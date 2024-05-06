@@ -20,8 +20,10 @@ form {
   width: calc(50% - 10px);
   margin-bottom: 10px;
   padding: 10px;
-  border: 1px solid #ccc;
+  /* border: 1px solid #ccc; */
+  border: 1px solid var(--secondary-color);
   border-radius: 5px;
+
 }
 
 textarea {

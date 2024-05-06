@@ -14,11 +14,11 @@ const Footer = () => {
               Follow us on social media to stay up-to-date with the latest news,
               promotions, and coffee tips from SA Coffee Company.
             </p>
-            <a href="#">
+            <a href="mailto::anthony@aands.co.za">
               <BsEnvelopeFill className="lod" />
               coffee20@gmail.com{" "}
             </a>
-            <a href="#">
+            <a href="https://web.facebook.com/sacoffeeco0205">
               <AiFillFacebook className="lod" />
               facebook{" "}
             </a>

@@ -4,7 +4,7 @@ const Landlord = () => {
   return (
     <div className="aka">
       <section className="landlord" id="Landlord Section">
-        <h1 className="heading">Landlords</h1>
+        <h1 className="heading Landlords">Landlords</h1>
         <div className="row">
           <div className="image">
             <img src={img1} alt="" />

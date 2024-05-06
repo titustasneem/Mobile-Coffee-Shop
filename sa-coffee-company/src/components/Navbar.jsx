@@ -3,7 +3,7 @@ import { useState } from "react";
 import { PiCoffee } from "react-icons/pi";
 import { RxHamburgerMenu } from "react-icons/rx";
 
-const Navbar = ({ setState }) => {
+const Navbar = ({ setState, state }) => {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
   const NavbBarSections = ["Home", "Our Story", "Booking", "Contact"];
   return (
@@ -28,7 +28,11 @@ const Navbar = ({ setState }) => {
           {NavbBarSections.map((section) => {
             return (
               <li>
-                <a href="#" onClick={() => setState(section)}>
+                <a
+                  className={state === section ? "NavActive" : ""}
+                  href="#"
+                  onClick={() => setState(section)}
+                >
                   {section}
                 </a>
               </li>

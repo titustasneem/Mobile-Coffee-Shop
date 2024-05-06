@@ -17,7 +17,7 @@ const Story = () => {
             return (
               <>
                 <a href="#" className="box" key={id}>
-                  <img src={images} alt="" />
+                  <img style={{ borderRadius: "40%" }} src={images} alt="" />
                   <div className="content">
                     <p>{story} </p>
                   </div>

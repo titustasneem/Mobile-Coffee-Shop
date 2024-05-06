@@ -60,7 +60,8 @@ import Story from "./components/Story";
 import { useState } from "react";
 
 function App() {
-  const [state, setState] = useState("");
+  const [state, setState] = useState("Home");
+  console.log(state)
   const changeNavbarSection = () => {
     switch (state) {
       case "About":
@@ -69,9 +70,15 @@ function App() {
         return <Book />;
       case "Our Story":
         return <Story />;
+      case "Contact":
+        return (
+          <div id="BodyDiv">
+            <Contact />
+          </div>
+        );
       // case "Products":
       // return <Product/>;
-
+      case "Home":
       default:
         return (
           <>
@@ -87,7 +94,7 @@ function App() {
   };
   return (
     <div className="App">
-      <Navbar setState={setState} /> {changeNavbarSection()}
+      <Navbar state={state} setState={setState} /> {changeNavbarSection()}
     </div>
   );
 }
