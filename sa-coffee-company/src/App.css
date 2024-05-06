@@ -566,13 +566,13 @@ section {
   line-height: 2.8;
 }
 
-.book form {
+/* .book form {
   margin: 0 auto 2rem auto;
   max-width: 60rem;
   border-radius: 10%;
   padding: 3rem;
   border: var(--border);
-}
+} */
 
 .book form .box {
   width: 100%;

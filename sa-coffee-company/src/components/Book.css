@@ -1,0 +1,88 @@
+.book {
+  /* width: 80%; */
+  margin: 0 auto;
+}
+form {
+  width: 80%;
+  margin: auto;
+}
+.heading {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.box {
+  width: calc(50% - 10px);
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btn {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.form-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .box {
+    width: 100%;
+  }
+
+  .form-group {
+    flex-direction: column;
+  }
+}
+@media (min-width: 1250px) {
+  .book form {
+    width: 65%;
+  }
+}
+@media (max-width: 700px) {
+  .book form {
+    width: 100%;
+  }
+}
+.StartDateAndEndDate {
+  display: flex;
+}
+.startDate {
+  width: 100%;
+}
+.endDate {
+  width: 100%;
+}
+.StartDateAndEndDate div input {
+  width: 100% !important;
+}
+.StartDateAndEndDate div label {
+  font-size: large;
+}
