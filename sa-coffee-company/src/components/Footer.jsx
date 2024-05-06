@@ -10,17 +10,14 @@ const Footer = () => {
             <div className="box-container">
 
                 <div className="box">
-                    <h3>contact info</h3>
+                    <h3>Connect with us</h3>
+                    <p>Follow us on social media to stay up-to-date with the latest news, promotions, and coffee tips from SA Coffee Company.</p>
                     <a href="#"><BsEnvelopeFill className='lod'/>coffee20@gmail.com </a>
-                </div>
-
-                <div className="box">
-                    <h3>follow us</h3>
                     <a href="#"><AiFillFacebook className='lod'/>facebook </a>
                     <a href="#"><FaInstagramSquare className='lod'/>instagram </a>
-     
                 </div>
 
+                  
             </div>
             <div className="credit"><FaRegCopyright  className='lod'/>Copyright All rights reserved</div>
         </section>

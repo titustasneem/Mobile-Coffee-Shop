@@ -2,9 +2,9 @@
 
 :root{
   --main-color: rgb(0, 0, 0);
-  --secondary-color: rgb(160, 160, 160);
+  --secondary-color: rgb(255, 149, 0);
   --tertiary-color: rgb(255, 255, 255);
-  --hover-color: rgb(255, 140, 0);
+  --hover-color: rgb(255, 149, 0);
   --border-radious:95% 4% 97% 5% 94% 3% 95%;
   --border-radious-hover:4% 95% 6% 95% 95% 4% 92% 5%;
   --border: .2rem solid var(--main-color);
@@ -34,6 +34,16 @@ section{
   padding: 2rem 9%;
 }
 
+.heading{
+  font-size: 5rem;
+  text-transform: uppercase;
+  color: var(--main-color);
+  letter-spacing: .2rem;
+  text-align: center;
+  position: relative;
+  margin-top : 45px;
+}
+
 /* -------------------------------------NAVBAR CSS START----------------------------- */
 
 .navigation{
@@ -45,13 +55,13 @@ section{
   align-items: center;
   justify-content: space-between;
   z-index: 1000;
-  background: var(--tertiary-color);
+  background-color: rgb(60, 60, 60);
   box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
   padding: 2rem 9%;
 }
 
 .navigation .Logo{
-  color: var(--main-color);
+  color: var(--tertiary-color);
   font-size: 2.3rem;
 }
 
@@ -100,7 +110,7 @@ section{
   display: block;
   width: 100%;
   font-size: 2rem;
-  color: var(--main-color);
+  color: var(--tertiary-color);
 }
 
 .navigation-menu li a:hover{
@@ -114,7 +124,7 @@ section{
   padding: 0.5rem;
   border-radius: 50%;
   font-size: 3rem;
-  background-color: var(--tertiary-color);
+  background-color: var(--secondary-color);
   color: var(--main-color);
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;
@@ -125,7 +135,7 @@ section{
   display: none;
 }
 .hamburger:hover {
-  background-color: var(--hover-color);
+  background-color: var(--tertiary-color);
 }
 
 
@@ -197,13 +207,13 @@ section{
 /* -------------------------------------NAVBAR CSS END----------------------------- */
 
 /* --------------------------------Home START-------------------------------- */
-/* .home{
+ /* .home{
   min-height: 100vh;
   padding-top: 12rem;
-  background: url("") no-repeat;
+  background: url("https://img.freepik.com/premium-vector/coffee-background-with-realistic-cup-coffee-vector_532963-317.jpg?w=1060") no-repeat;
   background-position: center;
   background-size: cover;
-} */
+}  */
 
 .home .row{
   display: flex;
@@ -220,6 +230,7 @@ section{
   flex: 1 1 42rem;
   padding-top: 10rem;
   text-align: center;
+  opacity: 80%;
 }
 
 .home .row .image img{
@@ -237,6 +248,8 @@ section{
 }
 
 .home .row .content h3{
+  /* text-align: right; */
+  /* margin-top: 4rem; */
   font-size: 6.5rem;
   color: var(--main-color);
   text-transform: uppercase;
@@ -262,7 +275,14 @@ section{
 
 
 /* --------------------------------ABOUT START-------------------------------- */
-.about .row{
+.about {
+    /* background-color: var(--main-color); */
+background-color: #F6941C;
+    background-position: center;
+    background-size: cover;
+  
+}
+.about .row {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -288,61 +308,272 @@ section{
   }
 }
 
-.heading{
-  font-size: 9rem;
-  text-transform: uppercase;
-  color: var(--secondary-color);
-  letter-spacing: .2rem;
-  text-align: center;
-  position: relative;
-  margin-top : 45px;
-}
+
 
 .about .row .content{
   flex: 1 1 42rem;
 }
 
 .about .row .content .title{
-  color: var(--main-color);
+  color: var(--tertiary-color);
   font-size: 3rem;
   line-height: 1.8;
 }
 
 .about .row .content p{
+  color: var(--tertiary-color);
+  font-size: 1.5rem;
+  line-height: 1.8;
+  padding: 1rem 0;
+}
+
+.about .heading {
+  color: var(--tertiary-color)
+}
+/* --------------------------------ABOUT END-------------------------------- */
+
+/* --------------------------------CONTACT START-------------------------------- */
+.contact .row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.contact .row .image{
+  flex: 1 1 42rem;
+}
+
+.contact .row .image img{
+  width: 100%;
+  animation: aboutImage 4s linear infinite;
+}
+@keyframes aboutImage{
+  0%,100%{
+    transform: scale(.9);
+    border-radius: var(--border-radious-hover);
+  }
+  50%{
+    transform: scale(.8);
+    border-radius: 50%;
+  }
+}
+
+
+.contact .row .content{
+  flex: 1 1 42rem;
+}
+
+.contact .row .content .title{
+  color: var(--main-color);
+  font-size: 3rem;
+  line-height: 1.8;
+}
+
+.contact .row .content p{
   color: var(--main-color);
   font-size: 1.5rem;
   line-height: 1.8;
   padding: 1rem 0;
 }
 
-.about .row .content .icons-container{
+
+/* --------------------------------CONTACT END-------------------------------- */
+
+/* --------------------------------LANDLORD START-------------------------------- */
+.landlord {
+  background-image: url("https://t4.ftcdn.net/jpg/03/03/00/91/360_F_303009193_4vd55sBxONzuNsbMIk4CSBjih7kHhUbb.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.landlord .row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.landlord .row .image{
+  flex: 1 1 42rem;
+}
+
+.landlord .row .image img{
+  width: 100%;
+  animation: aboutImage 4s linear infinite;
+}
+@keyframes aboutImage{
+  0%,100%{
+    transform: scale(.9);
+    border-radius: var(--border-radious-hover);
+  }
+  50%{
+    transform: scale(.8);
+    border-radius: 50%;
+  }
+}
+
+
+
+.landlord .row .content{
+  flex: 1 1 42rem;
+}
+
+.landlord .row .content .title{
+  color: var(--main-color);
+  font-size: 3rem;
+  line-height: 1.8;
+}
+
+.landlord .row .content p{
+  color: var(--main-color);
+  font-size: 1.5rem;
+  line-height: 1.8;
+  padding: 1rem 0;
+}
+
+/* --------------------------------LANDLORD END-------------------------------- */
+
+
+/* --------------------------------PRODUCT START-------------------------------- */
+/* .product{
+  background: url('./assets/image/menu-bg.jpg') no-repeat;
+  background-position: center;
+  background-size: cover;
+} */
+
+.product .box-container{
   display: flex;
   flex-wrap: wrap;
-  flex-wrap: 1rem;
-  padding-top: 3rem;
+  gap: 2rem;
+  justify-content: center;
 }
 
-.about .row .content .icons-container .icons{
-  flex: 1 1 15rem;
-  padding: 1.5rem;
-  text-align: center;
+.product .box-container .box{
+  flex: 1 1 42rem;
+  padding: 2rem;
   border: var(--border);
-  /* border-radius: 85% 15% 94% 6% / 25% 79% 21% 75% ; */
-  border-radius:50% 50% 50% 50% / 37% 73% 27% 63%    ;
-  
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-left: 6rem;
 }
 
-.about .row .content .icons-container .icons img{
-  height: 5rem;
+.product .box-container .box:hover{
+  border-radius: 78% 22% 80% 20% / 30% 78% 22% 70% ;
+  border-color: var(--hover-color);
 }
 
-.about .row .content .icons-container .icons h3{
-  font-size: 1.7rem;
+.product .box-container .box img{
+  height: 8rem;
+  margin-left: -6rem;
+}
+
+.product .box-container .box .content h3{
+  font-size: 2.2rem;
+  color: var(--main-color);
+  line-height: 1.8;
+
+} 
+
+.product .title{
+  font-size: 3rem;
   padding-top: 1rem;
+  color: var(--main-color);
+  letter-spacing: .2rem;
+  text-align: center;
+  position: relative;
+
+}
+
+
+.product .box-container .box .content p{
+  font-size: 1.6rem;
+  color: var(--main-color);
+  line-height: 1.8;
+  padding: 1rem 0;
+}
+
+.product .box-container .box .content span{
+  font-size: 2rem;
+  color: var(--main-color);
+  line-height: 1.8;
+}
+/* --------------------------------PRODUCT END-------------------------------- */
+
+
+
+
+
+/* --------------------------------FOOTER START-------------------------------- */
+.footer {
+ 
+  background-color: var(--secondary-color);
+  background-position: center;
+  background-size: cover;
+
+}
+.footer .box-container{
+ text-align: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(23rem,1fr));
+  /* gap: 1.5rem; */
+}
+
+.footer .box-container .box h3{
+    padding: 1rem 0;
+    font-size: 5rem;
+    text-transform: uppercase;
+    color: var(--tertiary-color);
+    letter-spacing: .2rem;
+    text-align: center;
+    position: relative;
+    margin-top : 45px;
+}
+
+.footer .box-container .box p{
+  padding: 1rem 0;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: var(--tertiary-color);
+    letter-spacing: .2rem;
+    text-align: center;
+    position: relative;
+    margin-top : 45px;
+}
+
+
+
+.footer .box-container .box a{
+  
+  display: block;
+  font-size: 2rem;
+  padding: 1rem 0;
+  color: var(--tertiary-color);
+}
+
+.footer .box-container .box a:hover{
+  
+  display: block;
+  font-size: 2rem;
+  padding: 1rem 0;
+  color: var(--main-color);
+}
+.footer .box-container .box .lod:hover{
+  padding-right: 2rem;
   color: var(--main-color);
 }
 
-/* --------------------------------ABOUT END-------------------------------- */
+.footer .credit{
+  text-align: center;
+  font-size: 1rem;
+  padding: 2rem 1rem;
+  margin-top: 1rem;
+  color: var(--tertiary-color);
+}
+
+/* --------------------------------FOOTER END-------------------------------- */
+
 
 
 
@@ -451,109 +682,6 @@ section{
   line-height: 1.8;
 }
 /* --------------------------------STORY END-------------------------------- */
-
-/* --------------------------------MENU START-------------------------------- */
-/* .product{
-  background: url('./assets/image/menu-bg.jpg') no-repeat;
-  background-position: center;
-  background-size: cover;
-} */
-
-.product .box-container{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: center;
-}
-
-.product .box-container .box{
-  flex: 1 1 42rem;
-  padding: 2rem;
-  border: var(--border);
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-  margin-left: 6rem;
-}
-
-.product .box-container .box:hover{
-  border-radius: 78% 22% 80% 20% / 30% 78% 22% 70% ;
-}
-
-.product .box-container .box img{
-  height: 8rem;
-  margin-left: -6rem;
-}
-
-.product .box-container .box .content h3{
-  font-size: 2.2rem;
-  color: var(--main-color);
-  line-height: 1.8;
-}
-
-.product .box-container .box .content p{
-  font-size: 1.6rem;
-  color: var(--main-color);
-  line-height: 1.8;
-  padding: 1rem 0;
-}
-
-.product .box-container .box .content span{
-  font-size: 2rem;
-  color: var(--main-color);
-  line-height: 1.8;
-}
-/* --------------------------------MENU END-------------------------------- */
-
-
-
-
-
-/* --------------------------------FOOTER START-------------------------------- */
-.footer .box-container{
- text-align: center;
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(23rem,1fr));
-  /* gap: 1.5rem; */
-}
-
-.footer .box-container .box h3{
-  font-size: 2.5rem;
-  padding: 1rem 0;
-  color: var(--main-color);
-}
-
-.footer .box-container .box a{
-  
-  display: block;
-  font-size: 1.5rem;
-  padding: 1rem 0;
-  color: var(--main-color);
-}
-
-.footer .box-container .box a:hover{
-  
-  display: block;
-  font-size: 1.5rem;
-  padding: 1rem 0;
-  color: var(--hover-color);
-}
-.footer .box-container .box .lod:hover{
-  padding-right: 2rem;
-  color: var(--hover-color);
-}
-
-.footer .credit{
-  text-align: center;
-  font-size: 2rem;
-  padding: 2rem 1rem;
-  margin-top: 1rem;
-  color: var(--main-color);
-}
-
-/* --------------------------------FOOTER END-------------------------------- */
-
-
 
 
 /* --------------------------------RESPONSIVE START-------------------------------- */

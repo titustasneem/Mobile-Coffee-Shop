@@ -10,10 +10,11 @@ const About = () => {
                     <img src={img1} alt="" />
                 </div>
                 <div className="content">
-                  <h3 className="title">Why Choose Us </h3>
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id perferendis dolores, atque tenetur laboriosam error!</p>
-                  <a href="#" className='btn' >Read more</a>
-                  <div className="icons-container">
+                  <h3 className="title">About SA Coffee Company </h3>
+                  <p>SA Coffee Company is a proudly women-owned business based in Gauteng, South Africa. Our passion lies in delivering premium-quality coffee to our customers nationwide. With a focus on excellence, we take pride in our in-house roaster and packaging facility, ensuring full control over the consistency and quality of our coffee products.</p>
+                  <p>At SA Coffee Company, our mission is to bring the rich flavors of the world coffee to customers across the nation. Through strategic partnerships and a commitment to excellence, we aim to make our premium coffee accessible to coffee lovers everywhere.</p>
+                  {/* <a href="#" className='btn' >Read more</a> */}
+                  {/* <div className="icons-container">
                     <div className="icons">
                       <img src={"../assets/images/home-img-secondary.png"} alt="" />
                       <h3>Reason 3</h3>
@@ -26,7 +27,7 @@ const About = () => {
                       <img src={"../assets/images/home-img-secondary.png"} alt="" />
                       <h3>Reason 1</h3>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
             </div>
         </section>

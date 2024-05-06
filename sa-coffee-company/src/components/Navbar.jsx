@@ -5,7 +5,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 
 const Navbar = ({ setState }) => {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
-  const NavbBarSections = ["Home", "Our Story", "Booking", "Contact", "Products"];
+  const NavbBarSections = ["Home", "Our Story", "Booking", "Contact"];
   return (
     <nav className="navigation">
       <a href="#" onClick={() => setState("")} className="Logo">

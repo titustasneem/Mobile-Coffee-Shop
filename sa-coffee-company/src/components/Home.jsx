@@ -36,7 +36,7 @@ const Home = () => {
       <section className="home" id="Home">
         <div className="row">
           <div className="content">
-            <h3>WILL PUT TEXT HERE</h3>
+            <h3>SA COFFEE COMPANY</h3>
             {/* <a href="" className="btn">
               {" "}
               Our Story
