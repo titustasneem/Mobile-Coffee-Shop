@@ -502,9 +502,12 @@ section {
   text-align: center;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
-  /* gap: 1.5rem; */
+  gap: 1.5rem;
 }
 
+.box {
+  margin:auto;
+}
 .footer .box-container .box h3 {
   padding: 1rem 0;
   font-size: 5rem;
