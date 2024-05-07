@@ -1,18 +1,20 @@
 {
   "files": {
-    "main.css": "/Mobile-Coffee-Shop/static/css/main.951491ce.css",
-    "main.js": "/Mobile-Coffee-Shop/static/js/main.abac50f3.js",
+    "main.css": "/Mobile-Coffee-Shop/static/css/main.3d5fc0ab.css",
+    "main.js": "/Mobile-Coffee-Shop/static/js/main.0fe100c8.js",
+    "static/media/Coffee.png": "/Mobile-Coffee-Shop/static/media/Coffee.c9ca70e8f79dd3cb786d.png",
+    "static/media/SACoffeeCompany.jpeg": "/Mobile-Coffee-Shop/static/media/SACoffeeCompany.4cda76911e49a3619864.jpeg",
     "static/media/Coffee_cup_icon.svg.png": "/Mobile-Coffee-Shop/static/media/Coffee_cup_icon.svg.3efe40338f974850fc75.png",
     "static/media/coffee-beans2.png": "/Mobile-Coffee-Shop/static/media/coffee-beans2.91d3f87db2b7d200f27f.png",
     "static/media/home-img-secondary.png": "/Mobile-Coffee-Shop/static/media/home-img-secondary.d61257b891f6397288b6.png",
     "static/media/home-img-primary.jpg": "/Mobile-Coffee-Shop/static/media/home-img-primary.3f8d4ecdbe1a0bdd676e.jpg",
     "static/media/mobileVan.webp": "/Mobile-Coffee-Shop/static/media/mobileVan.c2c999075cb7d9f1e022.webp",
     "index.html": "/Mobile-Coffee-Shop/index.html",
-    "main.951491ce.css.map": "/Mobile-Coffee-Shop/static/css/main.951491ce.css.map",
-    "main.abac50f3.js.map": "/Mobile-Coffee-Shop/static/js/main.abac50f3.js.map"
+    "main.3d5fc0ab.css.map": "/Mobile-Coffee-Shop/static/css/main.3d5fc0ab.css.map",
+    "main.0fe100c8.js.map": "/Mobile-Coffee-Shop/static/js/main.0fe100c8.js.map"
   },
   "entrypoints": [
-    "static/css/main.951491ce.css",
-    "static/js/main.abac50f3.js"
+    "static/css/main.3d5fc0ab.css",
+    "static/js/main.0fe100c8.js"
   ]
 }
