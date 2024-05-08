@@ -2,6 +2,8 @@ import React from "react";
 import { useState } from "react";
 import { PiCoffee } from "react-icons/pi";
 import { RxHamburgerMenu } from "react-icons/rx";
+import logo1 from "../assets/images/SACoffeeCompanyLogo1.jpeg";
+import logo2 from "../assets/images/SACoffeeCompanyLogo2.jpeg";
 
 const Navbar = ({ setState, state }) => {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
@@ -9,7 +11,9 @@ const Navbar = ({ setState, state }) => {
   return (
     <nav className="navigation">
       <a href="#" onClick={() => setState("")} className="Logo">
-        SA Coffee Company <PiCoffee />{" "}
+        <img alt="" src={logo2} width={"50px"} style={{ borderRadius: "5px" }}></img>
+        &nbsp;SA Coffee Company&nbsp;
+        <PiCoffee />{" "}
       </a>
       <button
         className="hamburger"

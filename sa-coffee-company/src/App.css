@@ -12,6 +12,12 @@
   --border-radious-hover: 4% 95% 6% 95% 95% 4% 92% 5%;
   --border: 0.2rem solid var(--main-color);
   --border-hover: 0.2rem dashed var(--hover-color);
+  --coffee-bean-dark: #3e2723; /* Dark brown for coffee beans */
+  --coffee-bean-medium: #4e342e; /* Medium brown for coffee beans */
+  --coffee-bean-light: #5d4037; /* Light brown for coffee beans */
+  --coffee-leaf-dark: #1b5e20; /* Dark green for coffee leaves */
+  --coffee-leaf-medium: #2e7d32; /* Medium green for coffee leaves */
+  --coffee-leaf-light: #388e3c; /* Light green for coffee leaves */
 }
 
 * {
@@ -24,7 +30,7 @@
   border: none;
   text-decoration: none;
   text-transform: capitalize;
-  transition: all 0.2s linear;
+  /* transition: all 0.2s linear; */
 }
 
 html {
@@ -64,7 +70,7 @@ section {
   z-index: 1000;
   /* background-color: #d3d2c5; */
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-  padding: 2rem 9%;
+  padding: 1rem 9%;
   background-color: #222222;
   border-bottom: 5px solid var(--secondary-color);
 }
@@ -75,6 +81,9 @@ section {
   /* color: var(--main-color); */
   color: white;
   font-size: 2.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .navigation .Logo:hover {
@@ -215,7 +224,14 @@ section {
   background-position: center;
   background-size: cover;
 }  */
-
+.transparentCoffee {
+  transform: rotate(270deg);
+  margin-left: -40px !important;
+}
+.ImageSlider {
+  width: 50%;
+  margin: auto;
+}
 .home .row {
   display: flex;
   align-items: center;
@@ -236,7 +252,9 @@ section {
 
 .home .row .image img {
   height: 35rem;
-  animation: float 4s linear infinite;
+  /* animation: float 4s linear infinite; */
+  border-radius: 10px;
+  width: 80%;
 }
 
 @keyframes float {
@@ -382,11 +400,9 @@ section {
   background-position: center;
   background-size: cover;
 
-  /* background-color: #0a0a0a; */
   background-image: url("./assets/images/SACoffeeCompany.jpeg");
   border-top: 5px solid var(--secondary-color);
   border-bottom: 5px solid var(--secondary-color);
-  
 }
 .landlord .row {
   display: flex;
@@ -515,7 +531,7 @@ section {
 /* --------------------------------FOOTER START-------------------------------- */
 .footer {
   /* background-color: var(--secondary-color); */
-  background-color: #0a0a0a;
+  background-color: #222222;
   background-position: center;
   background-size: cover;
   border-top: 5px solid var(--secondary-color);
@@ -557,13 +573,19 @@ section {
   font-size: 2rem;
   padding: 1rem 0;
   color: var(--tertiary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer .box-container .box a:hover {
   display: block;
   font-size: 2rem;
   padding: 1rem 0;
-  color: var(--main-color);
+  color: var(--secondary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .footer .box-container .box .lod:hover {
   padding-right: 2rem;
@@ -722,8 +744,11 @@ section {
     font-size: 50%;
   }
   .home .row .image img {
-    height: auto;
+    height: 270px;
     width: 100%;
+  }
+  .ImageSlider {
+    width: 80%;
   }
 }
 
