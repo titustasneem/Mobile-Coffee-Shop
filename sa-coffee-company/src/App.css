@@ -670,7 +670,17 @@ section {
   border-radius: 10px;
   width: 40%;
 }
+@media (max-width: 550px) {
+  .story .box-container .image img {
+    height: 35rem;
+    border-radius: 10px;
+    width: 100%;
+  }
+  .story .box-container .box {
+    margin: 0px !important;
+  }
 
+}
 /* --------------------------------STORY END-------------------------------- */
 
 /* --------------------------------RESPONSIVE START-------------------------------- */

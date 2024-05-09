@@ -1,5 +1,5 @@
 .book {
-  margin: 0 auto;
+  margin: 40px auto;
 }
 form {
   width: 80%;
@@ -16,7 +16,7 @@ form {
 }
 
 .book .box {
-  width: calc(50% - 10px);
+  width: 100%;
   margin-bottom: 10px;
   padding: 10px;
   background-color: rgb(212, 212, 212);
@@ -52,7 +52,17 @@ form {
   justify-content: space-between;
   margin-bottom: 10px;
 }
+.flexBook {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 550px) {
+  .flexBook {
+    display: block;
+    justify-content: space-between;
+  }
 
+}
 @media (max-width: 768px) {
   .box {
     width: 100%;

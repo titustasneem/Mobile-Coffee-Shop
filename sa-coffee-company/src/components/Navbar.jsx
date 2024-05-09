@@ -39,7 +39,10 @@ const Navbar = ({ setState, state }) => {
                 <a
                   className={state === section ? "NavActive" : ""}
                   href="#"
-                  onClick={() => setState(section)}
+                  onClick={() => {
+                    setState(section);
+                    setIsNavExpanded(false);
+                  }}
                 >
                   {section}
                 </a>

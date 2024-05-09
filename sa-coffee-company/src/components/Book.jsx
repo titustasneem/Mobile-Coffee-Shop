@@ -10,27 +10,30 @@ const Book = () => {
           target="_blank"
           action="https://formspree.io/f/xoqgrrrk"
         >
-          <input
-            type="text"
-            placeholder="Your name"
-            id="sameLine"
-            className="box"
-            name="name"
-          />
-          <input
-            type="text"
-            placeholder="Your surname name"
-            id="sameLine"
-            className="box"
-            name="surname"
-          />
+          <div className="flexBook">
+            <input
+              type="text"
+              placeholder="Your name"
+              id="sameLine"
+              className="box"
+              name="name"
+            />
+            &nbsp;&nbsp;
+            <input
+              type="text"
+              placeholder="Your surname name"
+              id="sameLine"
+              className="box"
+              name="surname"
+            />
+          </div>
           <input
             name="email"
             type="email"
             placeholder="Your email"
             className="box"
           />
-          <div className="StartDateAndEndDate">
+          <div className="flexBook">
             <div className="startDate">
               <label>Start Date</label>
               <input
@@ -41,6 +44,7 @@ const Book = () => {
                 name="date-from"
               />
             </div>
+            &nbsp;&nbsp;
             <div className="endDate">
               <label>End Date</label>
 
@@ -53,62 +57,72 @@ const Book = () => {
               />
             </div>
           </div>
-          <input
-            type="text"
-            placeholder="Physical address of event"
-            className="box"
-            name="address"
-          />
-          <input
-            name="address2"
-            type="text"
-            placeholder="Address Line 2"
-            className="box"
-          />
-          <input
-            name="city"
-            type="text"
-            placeholder="City"
-            id="sameLine"
-            className="box"
-          />
-          <input
-            type="text"
-            placeholder="State/Province/Region"
-            id="sameLine"
-            className="box"
-            name="Region"
-          />
-          <input
-            type="number"
-            placeholder="Street code"
-            id="sameLine"
-            className="box"
-            name="street code"
-          />
-
-          <input
-            type="number"
-            placeholder="Location Pin"
-            id="sameLine"
-            name="Location Pin"
-            className="box"
-          />
-          <input
-            type="number"
-            placeholder="Number of people"
-            id="sameLine"
-            className="box"
-            name="Number-of-people"
-          />
-          <input
-            type="number"
-            placeholder="Your contact number"
-            id="sameLine"
-            className="box"
-            name="contact-number"
-          />
-
+          <div className="flexBook">
+            <input
+              type="text"
+              placeholder="Physical address of event"
+              className="box"
+              name="address"
+            />
+            &nbsp;&nbsp;
+            <input
+              name="address2"
+              type="text"
+              placeholder="Address Line 2"
+              className="box"
+            />
+          </div>
+          <div className="flexBook">
+            <input
+              name="city"
+              type="text"
+              placeholder="City"
+              id="sameLine"
+              className="box"
+            />
+            &nbsp;&nbsp;
+            <input
+              type="text"
+              placeholder="State/Province/Region"
+              id="sameLine"
+              className="box"
+              name="Region"
+            />
+          </div>
+          <div className="flexBook">
+            <input
+              type="number"
+              placeholder="Street code"
+              id="sameLine"
+              className="box"
+              name="street code"
+            />
+            &nbsp;&nbsp;
+            <input
+              type="number"
+              placeholder="Location Pin"
+              id="sameLine"
+              name="Location Pin"
+              className="box"
+            />
+          </div>
+          <div className="flexBook">
+            <input
+              type="number"
+              placeholder="Number of people"
+              id="sameLine"
+              className="box"
+              name="Number-of-people"
+            />
+            &nbsp;&nbsp;
+            <input
+              type="number"
+              placeholder="Your contact number"
+              id="sameLine"
+              className="box"
+              name="contact-number"
+            />
+          </div>
           <textarea
             placeholder="your message"
             name="your-message"
@@ -116,6 +130,7 @@ const Book = () => {
             cols="30"
             rows="10"
           ></textarea>
+          <br></br>
           <input type="submit" value="send message" className="btn" />
         </form>
       </section>
