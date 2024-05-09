@@ -1,5 +1,4 @@
 import React from "react";
-import img1 from "../assets/images/mobileVan.webp";
 import img2 from "../assets/images/SACoffeeCompanyLandlords.jpeg";
 
 const Landlord = () => {

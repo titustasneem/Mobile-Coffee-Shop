@@ -1,5 +1,4 @@
 import React from "react";
-import img1 from "../assets/images/mobileVan.webp";
 const Contact = () => {
   return (
     <div className="aka">
@@ -14,9 +13,6 @@ const Contact = () => {
               weddings, our team is here to provide premium coffee and
               exceptional service to elevate your experience.
             </p>
-          </div>
-          <div className="image">
-            <img src={img1} alt="" />
           </div>
         </div>
       </section>

@@ -1,16 +1,10 @@
 import React from "react";
-import img1 from "../assets/images/mobileVan.webp";
-import img2 from "../assets/images/SACoffeeCompanyLandlords.jpeg";
 const About = () => {
   return (
     <div className="aka">
       <section className="about" id="About Section">
         <h1 className="heading">about us</h1>
         <div className="row">
-          <div className="image">
-            <img src={img1} alt="" />
-          </div>
-
           <div className="content">
             <h3 className="title">About SA Coffee Company </h3>
             <p>

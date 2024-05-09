@@ -20,17 +20,12 @@ const FooterData = [
     url: "#",
   },
 ];
-const Footer = () => {
+const MiniContact = () => {
   return (
     <div className="aka">
       <section className="footer">
         <div className="box-container">
           <div className="box">
-            <h3>Connect with us</h3>
-            <p>
-              Follow us on social media to stay up-to-date with the latest news,
-              promotions, and coffee tips from SA Coffee Company.
-            </p>
             {FooterData.map((obj) => (
               <a rel="noreferrer" target="_blank" href={obj.url}>
                 {obj.icon}
@@ -48,4 +43,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default MiniContact;

@@ -55,13 +55,14 @@ import Landlord from "./components/Landlord";
 import Product from "./components/Product";
 import Book from "./components/Book";
 import Footer from "./components/Footer";
+import MiniContact from "./components/MiniContact";
 
 import Story from "./components/Story";
 import { useState } from "react";
 
 function App() {
   const [state, setState] = useState("Home");
-  console.log(state)
+  console.log(state);
   const changeNavbarSection = () => {
     switch (state) {
       case "About":
@@ -74,10 +75,9 @@ function App() {
         return (
           <div id="BodyDiv">
             <Contact />
+            <MiniContact />
           </div>
         );
-      // case "Products":
-      // return <Product/>;
       case "Home":
       default:
         return (

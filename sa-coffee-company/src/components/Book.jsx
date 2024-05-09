@@ -1,9 +1,6 @@
 import React from "react";
 import "./Book.css";
-// import { useForm, ValidationError } from "@formspree/react";
 const Book = () => {
-  // const [state, handleSubmit] = useForm("xoqgrrrk");
-
   return (
     <div className="aka">
       <section className="book" id="Booking Section">
@@ -45,7 +42,7 @@ const Book = () => {
               />
             </div>
             <div className="endDate">
-            <label>End Date</label>
+              <label>End Date</label>
 
               <input
                 type="datetime-local"
